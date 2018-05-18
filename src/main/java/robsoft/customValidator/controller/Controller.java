@@ -16,7 +16,6 @@ import robsoft.customValidator.model.CVModel;
 @RestController
 @RequestMapping("/validation")
 public class Controller {
-
 	
 	@PostMapping
 	public ResponseEntity<String> validation(@Valid @RequestBody CVModel model, BindingResult result) {
